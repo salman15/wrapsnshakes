@@ -1,0 +1,108 @@
+{
+    "general": {
+        "title": "Wraps 'n Shakes"
+    },
+    "pages":{
+        "landing": {
+            "title": "Wraps 'n Shakes",
+            "bg": "fff",
+            "bgImage": "http://sexy-cow.com/wp-content/uploads/2016/10/0da67a0e-559f-4ab7-b54a-118ae1a4316d.jpg"
+        },
+        "firstImage": {
+            "bgImage": "https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_8036.jpg"
+        },
+        "menu":{
+            "subTitle": "Our Menu",
+            "bgImage": "https://i.pinimg.com/originals/b1/d0/1a/b1d01a377009e0d59fce582b99b60b32.jpg",
+            "menuItems": [
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        }
+                    ]
+                },
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        }
+                    ]
+                },
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
