@@ -16,14 +16,14 @@ const Block = styled.div`
   box-shadow: 0 2px 19px 0 rgba(0, 0, 0, 0.16);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: ${props => (props.spacing ? props.spacing : "center")};
+  width: 80%;
   height: 100%;
-  flex-direction: column;
+  flex-direction: ${props => (props.direction ? props.direction : "column")};
   border-radius: 62px;
   padding: 20px;
   background-image: ${props => "url(" + props.bgImage + ")"};
-  background-color: black;
+  background-color: ${props => (props.bgColor ? props.bgColor : "#D8D8D8")};
   background-size: 150%;
   background-position: center;
   margin: 32px 0;
@@ -52,10 +52,24 @@ const Block = styled.div`
   }
 `;
 
-export const ContentBlock = ({ title, bgImage, children, color }) => {
+export const ContentBlock = ({
+  title,
+  bgImage,
+  children,
+  color,
+  bgColor,
+  direction,
+  spacing
+}) => {
   console.log(bgImage);
   return (
-    <Block bgImage={bgImage} color={color}>
+    <Block
+      bgImage={bgImage}
+      bgColor={bgColor}
+      color={color}
+      direction={direction}
+      spacing={spacing}
+    >
       {title &&
         <h1>
           {title}

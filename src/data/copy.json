@@ -1,12 +1,16 @@
 {
     "general": {
-        "title": "Wraps 'n Shakes"
+        "title": "Wraps 'n Shakes",
+        "icons":{
+            "spacerWhite": "/assets/images/icons/wrap-icon-white.png"
+        }
     },
     "pages":{
         "landing": {
             "title": "Wraps 'n Shakes",
             "bg": "fff",
-            "bgImage": "http://sexy-cow.com/wp-content/uploads/2016/10/0da67a0e-559f-4ab7-b54a-118ae1a4316d.jpg"
+            "bgImage": "/assets/images/backgrounds/header-background.png",
+            "logo": "/assets/images/logo512.png"
         },
         "firstImage": {
             "bgImage": "https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_8036.jpg"
