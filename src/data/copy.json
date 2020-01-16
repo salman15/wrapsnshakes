@@ -113,6 +113,27 @@
             "first": "/assets/images/products/milkshake-2-image.png",
             "second": "/assets/images/products/milkshake-image.png",
             "third": "/assets/images/products/wraps-image.png"
+        },
+        "reviews": {
+            "title": "Reviews",
+            "reviews": [
+                {
+                    "quote": "Great Food!",
+                    "person": "Alex Maxford"
+                },
+                {
+                    "quote": "Great Food!",
+                    "person": "James Maxford"
+                },
+                {
+                    "quote": "Great Food!",
+                    "person": "Jim Maxford"
+                },
+                {
+                    "quote": "Great Food!",
+                    "person": "Tom Maxford"
+                }
+            ]
         }
     }
 }

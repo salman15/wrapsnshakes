@@ -61,7 +61,6 @@ export const ContentBlock = ({
   direction,
   spacing
 }) => {
-  console.log(bgImage);
   return (
     <Block
       bgImage={bgImage}
