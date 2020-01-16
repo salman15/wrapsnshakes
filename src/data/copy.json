@@ -122,18 +122,24 @@
                     "person": "Alex Maxford"
                 },
                 {
-                    "quote": "Great Food!",
+                    "quote": "Great Shakes!",
                     "person": "James Maxford"
                 },
                 {
-                    "quote": "Great Food!",
+                    "quote": "Great Fries!",
                     "person": "Jim Maxford"
                 },
                 {
-                    "quote": "Great Food!",
+                    "quote": "Great Service!",
                     "person": "Tom Maxford"
                 }
-            ]
+            ],
+            "icons": {
+                "uber" : "/assets/images/icons/ue-icon.png",
+                "thuisbezorgd" : "/assets/images/icons/thuisbezorgd-icon.png",
+                "foodora" : "/assets/images/icons/foodora-icon.png",
+                "google" : "/assets/images/icons/google-icon.png"
+            }
         }
     }
 }

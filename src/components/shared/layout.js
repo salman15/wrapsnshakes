@@ -117,3 +117,5 @@ export const ColumnText = styled.p`
 `;
 
 export const FoodImage = styled.img`width: 100%;`;
+
+export const CompanyIcon = styled.img``;

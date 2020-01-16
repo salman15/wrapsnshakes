@@ -18,7 +18,8 @@ import {
   InnerWrapper,
   MenuProduct,
   MenuList,
-  MenuListItem
+  MenuListItem,
+  CompanyIcon
 } from "../components";
 import copy from "../data/copy.json";
 import { toCurrency } from "../utils/calculations";
@@ -130,11 +131,23 @@ const App = () => {
         <Wrapper bgColor="transparent" width={80}>
           <Wrapper bgColor="transparent" width={100} direction="row">
             <Column width={50}>
-              <Wrapper bgColor="transparent" width={100}>
-                hi
+              <Wrapper
+                bgColor="transparent"
+                width={100}
+                direction="row"
+                spacing="space-between"
+              >
+                <CompanyIcon src={copy.pages.reviews.icons.google} />
+                <CompanyIcon src={copy.pages.reviews.icons.foodora} />
               </Wrapper>
-              <Wrapper bgColor="transparent" width={100}>
-                <h2>Reviews</h2>
+              <Wrapper
+                bgColor="transparent"
+                width={100}
+                direction="row"
+                spacing="space-between"
+              >
+                <CompanyIcon src={copy.pages.reviews.icons.uber} />
+                <CompanyIcon src={copy.pages.reviews.icons.thuisbezorgd} />
               </Wrapper>
             </Column>
             <Column width={50}>
@@ -151,6 +164,9 @@ const App = () => {
               </ContentBlock>
             </Column>
           </Wrapper>
+        </Wrapper>
+        <Wrapper bgColor="transparent" width={80}>
+          <h1>Contact</h1>
         </Wrapper>
       </Container>
     </div>
