@@ -18,11 +18,11 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: ${props => (props.direction ? props.direction : "column")};
+  width: ${props => (props.width ? props.width + "%" : "100%")};
   height: 100%;
   padding: 64px;
-  background-color: #ffffff9e;
+  background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
   border-radius: 62px;
 `;
 
@@ -64,12 +64,12 @@ const Column = styled.div`
   flex-direction: column;
 `;
 
-const Ball = styled.span`
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-`;
+// const Ball = styled.span`
+//   background-color: white;
+//   width: 100px;
+//   height: 100px;
+//   border-radius: 50%;
+// `;
 
 const Header = styled.div`
   position: relative;
@@ -129,6 +129,8 @@ const ColumnText = styled.p`
   font-size: 24px;
 `;
 
+const FoodImage = styled.img`width: 100%;`;
+
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -163,6 +165,18 @@ const App = () => {
             </ColumnText>
           </Column>
         </ContentBlock>
+        <Wrapper bgColor="transparent" width={80}>
+          <h1>Our Food</h1>
+          <Wrapper bgColor="transparent" direction="row">
+            <Column width={50}>
+              <FoodImage src={copy.pages.food.first} />
+            </Column>
+            <Column width={50}>
+              <FoodImage src={copy.pages.food.second} />
+              <FoodImage src={copy.pages.food.third} />
+            </Column>
+          </Wrapper>
+        </Wrapper>
         <ContentBlock
           bgImage={copy.pages.menu.bgImage}
           subTitle={copy.pages.menu.subTitle}
@@ -182,7 +196,7 @@ const App = () => {
 
                     {item.products.map((item, index) => {
                       return (
-                        <MenuProduct>
+                        <MenuProduct key={index}>
                           <MenuListItem>
                             {item.product}
                           </MenuListItem>
@@ -198,11 +212,11 @@ const App = () => {
             </InnerWrapper>
           </Wrapper>
         </ContentBlock>
-        <ContentBlock color="#292929" direction="row" spacing="space-between">
+        <ContentBlock bgColor="#1F1A38" direction="row" spacing="space-between">
           <Column width={40}>
             <h2>About us</h2>
           </Column>
-          <SpacerImage src={copy.general.icons.spacer} />
+          <SpacerImage src={copy.general.icons.spacerWhite} />
           <Column width={50}>
             <ColumnText>
               “De Libanese keuken is een keuken van de zon en een keuken uit het

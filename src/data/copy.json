@@ -108,6 +108,11 @@
                     ]
                 }
             ]
+        },
+        "food": {
+            "first": "/assets/images/products/milkshake-2-image.png",
+            "second": "/assets/images/products/milkshake-image.png",
+            "third": "/assets/images/products/wraps-image.png"
         }
     }
 }
