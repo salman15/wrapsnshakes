@@ -11,7 +11,7 @@ const Container = styled.div`
   width: 40px;
   cursor: pointer;
   background-color: #212121;
-  margin: 10px 0;
+  margin: 10px 16px;
   border-radius: 50px;
   height: 50px;
   width: 50px;

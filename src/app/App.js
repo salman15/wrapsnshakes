@@ -108,6 +108,27 @@ const HeaderNav = styled.nav`
 
 const SpacerImage = styled.img``;
 
+const Button = styled.a`
+  border-radius: 43.5px;
+  background-color: #212121;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  margin: 0 16px;
+`;
+
+const ColumnText = styled.p`
+  font-style: italic;
+  font-family: Roboto;
+  font-size: 24px;
+`;
+
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -115,6 +136,7 @@ const App = () => {
       <Container>
         <Header bgImage={copy.pages.landing.bgImage}>
           <HeaderNav>
+            <Button>Reserveer</Button>
             <BurgerMenu open={openMenu} setOpen={setOpenMenu} />
           </HeaderNav>
           <HeaderTitle>
@@ -133,12 +155,12 @@ const App = () => {
           </Column>
           <SpacerImage src={copy.general.icons.spacerWhite} />
           <Column width={50}>
-            <p>
+            <ColumnText>
               “De Libanese keuken is een keuken van de zon en een keuken uit het
               hart”. De kleuren weerspiegelen de 1001 zonnige landschappen en de
               diversiteit roept de overvloedige Libanese vrijgevigheid en
               gastvrijheid op.
-            </p>
+            </ColumnText>
           </Column>
         </ContentBlock>
         <ContentBlock
@@ -180,14 +202,14 @@ const App = () => {
           <Column width={40}>
             <h2>About us</h2>
           </Column>
-          <Ball />
+          <SpacerImage src={copy.general.icons.spacer} />
           <Column width={50}>
-            <p>
+            <ColumnText>
               “De Libanese keuken is een keuken van de zon en een keuken uit het
               hart”. De kleuren weerspiegelen de 1001 zonnige landschappen en de
               diversiteit roept de overvloedige Libanese vrijgevigheid en
               gastvrijheid op.
-            </p>
+            </ColumnText>
           </Column>
         </ContentBlock>
       </Container>
