@@ -38,7 +38,9 @@ const App = () => {
   return (
     <div className="App-body">
       <Container>
-        <Header bgImage={copy.pages.landing.bgImage}>
+        <Header
+        //bgImage={copy.pages.landing.bgImage}
+        >
           <HeaderNav>
             <Button>Reserveer</Button>
             <BurgerMenu open={openMenu} setOpen={setOpenMenu} />

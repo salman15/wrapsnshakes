@@ -71,11 +71,29 @@ export const Header = styled.div`
   width: 100%;
   min-height: 70vh;
   margin-bottom: 200px;
+  &:before {
+    content: " ";
+    display: flex;
+    position: absolute;
+    width: calc(100% + 800px);
+    height: 140vh;
+    bottom: 0px;
+    background-color: #dd99bb;
+    border-radius: 50%;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
   font-weight: 100;
   font-size: 200px;
+  z-index: 1;
+`;
+
+export const HeaderSubTitle = styled.p`
+  font-weight: 100;
+  font-size: 200px;
+  z-index: 1;
+  font-style: italic;
 `;
 
 export const HeaderIcon = styled.img`
@@ -91,6 +109,7 @@ export const HeaderNav = styled.nav`
   align-items: center;
   height: 60px;
   width: 80%;
+  z-index: 1;
 `;
 
 export const SpacerImage = styled.img``;

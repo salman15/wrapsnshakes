@@ -9,6 +9,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-direction: column;
+  width: 50%;
 `;
 
 const Quote = styled.p`
@@ -38,22 +40,27 @@ export const Slider = ({ data }) => {
 
   return (
     <Container>
-      <Wrapper bgColor="transparent">
-        <Wrapper
-          bgColor="transparent"
-          direction="row"
-          spacing="space-between"
-          padding={1}
-        >
-          {data.map((item, index) =>
-            <SlideController
-              active={currentStep}
-              setActive={setCurrentStep}
-              index={index}
-            />
-          )}{" "}
-        </Wrapper>
+      <Wrapper
+        bgColor="transparent"
+        direction="row"
+        spacing="space-between"
+        padding={1}
+      >
+        {data.map((item, index) =>
+          <SlideController
+            active={currentStep}
+            setActive={setCurrentStep}
+            index={index}
+          />
+        )}
+      </Wrapper>
 
+      <Wrapper
+        bgColor="transparent"
+        direction="row"
+        spacing="space-between"
+        padding={1}
+      >
         {data.map((item, index) =>
           <Slide index={index} active={currentStep}>
             <Quote>"{item.quote}" </Quote>
