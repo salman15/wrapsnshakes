@@ -5,9 +5,10 @@ export const Wrapper = styled.div`
   justify-content: ${props => (props.spacing ? props.spacing : "center")};
   align-items: center;
   flex-direction: ${props => (props.direction ? props.direction : "column")};
-  width: ${props => (props.width ? props.width + "%" : "100%")};
-  height: 100%;
-  padding: ${props => (props.padding ? props.padding + "px" : "64px")};
+  width: ${props => (props.width ? props.width : "100%")};
+  max-width: 100%;
+  height: ${props => (props.height ? props.height : "100%")};
+  padding: ${props => (props.padding ? props.padding + "px" : "0px")};
   background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
   border-radius: 62px;
 `;
@@ -44,12 +45,33 @@ export const MenuProduct = styled.div`
 
 export const Column = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${props =>
+    props.spacing ? props.spacing : " space-between"};
+
   align-items: center;
   width: ${props => (props.width ? props.width + "%" : "100%")};
   height: 100%;
-  flex-direction: column;
+  flex-direction; column;
 `;
+
+export const ImageBlockTwist = styled.div`
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -150px;
+`;
+
+export const ImageBlockContainer = styled.div`
+  display: flex;
+  justify-content: ${props => (props.spacing ? props.spacing : "center")};
+  align-items: center;
+  width: ${props => (props.width ? props.width : "initial")};
+  background-color: white;
+  margin: 32px;
+  padding: 64px;
+  border-radius: 17px;
+`;
+
+export const ImageBlock = styled.img`width: 200px;`;
 
 // export const Ball = styled.span`
 //   background-color: white;
@@ -75,7 +97,7 @@ export const Header = styled.div`
     content: " ";
     display: flex;
     position: absolute;
-    width: calc(100% + 800px);
+    width: calc(100% + 1000px);
     height: 140vh;
     bottom: 0px;
     background-color: #dd99bb;
@@ -87,20 +109,38 @@ export const HeaderTitle = styled.h1`
   font-weight: 100;
   font-size: 200px;
   z-index: 1;
+  margin-bottom: 0;
+`;
+
+export const HeaderContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 400px;
 `;
 
 export const HeaderSubTitle = styled.p`
-  font-weight: 100;
-  font-size: 200px;
+  font-weight: 200;
+  font-size: 32px;
   z-index: 1;
   font-style: italic;
 `;
 
 export const HeaderIcon = styled.img`
   position: absolute;
-  bottom: -100px;
+  bottom: ${props => (props.bottom ? props.bottom + "px" : "-200px")};
+  left: ${props => (props.left ? props.left + "px" : "initial")};
+  right: ${props => (props.right ? props.right + "px" : "initial")};
   object-fit: cover;
-  width: 200px;
+  width: ${props => (props.width ? props.width + "px" : "400px")};
+`;
+
+export const HeaderIconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `;
 
 export const HeaderNav = styled.nav`
@@ -108,8 +148,10 @@ export const HeaderNav = styled.nav`
   justify-content: flex-end;
   align-items: center;
   height: 60px;
-  width: 80%;
+  /*width: 80%;*/
+  width: 1149px;
   z-index: 1;
+  margin: 24px 0;
 `;
 
 export const SpacerImage = styled.img``;

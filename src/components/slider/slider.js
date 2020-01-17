@@ -34,8 +34,8 @@ export const Slider = ({ data }) => {
         setTimeout(function() {
           nextStep();
         }, 5000);
-    }
-    //[data, nextStep]
+    },
+    [currentStep, data, nextStep]
   );
 
   return (

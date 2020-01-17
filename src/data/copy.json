@@ -11,7 +11,14 @@
             "title": "Wraps 'n Shakes",
             "bg": "fff",
             "bgImage": "/assets/images/backgrounds/header-background.png",
-            "logo": "/assets/images/wrap.png"
+            "ingredients": [
+                "/assets/images/wrap.png",
+                "/assets/images/parsley.png",
+                "/assets/images/lemons.png",
+                "/assets/images/salsa.png",
+                "/assets/images/paprika.png"
+
+            ]
         },
         "firstImage": {
             "bgImage": "https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_8036.jpg"
@@ -110,9 +117,9 @@
             ]
         },
         "food": {
-            "first": "/assets/images/products/milkshake-2-image.png",
-            "second": "/assets/images/products/milkshake-image.png",
-            "third": "/assets/images/products/wraps-image.png"
+            "first": "/assets/images/gucemoli.png",
+            "second": "/assets/images/shake-top.png",
+            "third": "/assets/images/wrap-top.png"
         },
         "reviews": {
             "title": "Reviews",

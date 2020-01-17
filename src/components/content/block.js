@@ -13,12 +13,12 @@ from {
 `;
 
 const Block = styled.div`
-  box-shadow: 0 2px 19px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 40px 4px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: ${props => (props.spacing ? props.spacing : "center")};
-  width: 80%;
-  height: 100%;
+  /*width: 80%;*/
+  width: 1149px;
   flex-direction: ${props => (props.direction ? props.direction : "column")};
   border-radius: 62px;
   padding: 20px;
@@ -29,7 +29,7 @@ const Block = styled.div`
   margin: 32px 0;
   min-height: 400px;
   color: ${props => (props.color ? props.color : "white")};
-
+  max-width: 100%;
   h1 {
     position: relative;
     font-size: 280px;
