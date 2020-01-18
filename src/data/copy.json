@@ -211,6 +211,59 @@
         },
         "aboutUs": {
             "text": "“De Libanese keuken is een keuken van de zon en een keuken uit het hart”. De kleuren weerspiegelen de 1001 zonnige landschappen en de diversiteit roept de overvloedige Libanese vrijgevigheid en gastvrijheid op."
+        },
+        "contact": {
+            "title": "Contact",
+            "email": {
+                "title": "Email",
+                "support":{
+                    "title": "For Support:",
+                    "email": "support@wrapnshakes.nl"
+                },
+                "work":{
+                    "title": "To join our team:",
+                    "email": "work@wrapnshakes.nl"
+                },
+                "info":{
+                    "title": "For questions:",
+                    "email": "info@wrapnshakes.nl"
+                }
+            },
+            "tel":{
+                "title": "Phone",
+                "text": "tel: ",
+                "number": "0620438661"
+            },
+            "adres":[
+                {
+                    "content": "Adres: Kruisweg 649"
+                },
+                {
+                    "content": "postal: 1054JA"
+                },
+                {
+                    "content": "City: Rotterdam"
+                },
+                {
+                    "content": "Country: The Netherlands"
+                }
+            ],
+            "businessInfo":[
+                {
+                    "content": "Wraps 'n Shakes"
+                },
+                {
+                    "content": "KVK: 1234567"
+                }
+            ],
+            "social":[
+                {
+                    "content": "Instagram: @wrapsnshakes"
+                },
+                {
+                    "content": "Facebook: @wrapsnshakes"
+                }
+            ]
         }
     }
 }

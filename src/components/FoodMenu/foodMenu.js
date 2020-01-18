@@ -74,6 +74,7 @@ export const FoodMenu = () => {
 const Veggies = styled.img`
   position: absolute;
   right: 0;
+  z-index: 1;
 `;
 
 const MenuTitle = styled.h1`
@@ -87,6 +88,8 @@ const MenuTitle = styled.h1`
 const MenuItemTitle = styled.h3`margin: 16px 0;`;
 
 const MenuList = styled.ul`
+  position: relative;
+  z-index: 2;
   border-bottom: 2px solid #424242;
   width: 100%;
   margin: 24px 16px;

@@ -3,22 +3,6 @@ import styled from "styled-components";
 import { Slide } from "./slide";
 import { SlideController } from "./slideController";
 import { Wrapper } from "../";
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  flex-direction: column;
-  width: 50%;
-`;
-
-const Quote = styled.p`
-  font-style: italic;
-  font-size: 24px;
-`;
-
-const Person = styled.p`font-size: 16px;`;
 
 export const Slider = ({ data }) => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -71,3 +55,24 @@ export const Slider = ({ data }) => {
     </Container>
   );
 };
+
+const Container = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  width: 50%;
+`;
+
+const Quote = styled.p`
+  font-style: italic;
+  font-size: 24px;
+  color: #292929;
+`;
+
+const Person = styled.p`
+  font-size: 16px;
+  color: #292929;
+`;

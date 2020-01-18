@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   margin: ${props => (props.margin ? props.margin : "0px")};
   background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
   color: ${props => (props.color ? props.color : "#fff")};
-  border-radius: 62px;
+  ${"" /* border-radius: 62px; */};
 `;
 
 export const InnerWrapper = styled.div`
@@ -31,7 +31,7 @@ export const Column = styled.div`
 
   align-items: center;
   width: ${props => (props.width ? props.width + "%" : "100%")};
-  height: 100%;
+  height: ${props => (props.height ? props.height : "100%")};
   flex-direction: ${props => (props.direction ? props.direction : "column")};
   text-align: ${props => (props.alignText ? props.alignText : "left")};
 `;
@@ -88,4 +88,7 @@ export const ColumnText = styled.p`
 
 export const FoodImage = styled.img`width: 100%;`;
 
-export const CompanyIcon = styled.img``;
+export const Title = styled.h1`
+  font-size: 159px;
+  font-style: italic;
+`;
