@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: ${props => (props.spacing ? props.spacing : "center")};
-  align-items: center;
+  align-items: ${props => (props.position ? props.position : "center")};
   flex-direction: ${props => (props.direction ? props.direction : "column")};
   width: ${props => (props.width ? props.width : "100%")};
   max-width: 100%;
   height: ${props => (props.height ? props.height : "100%")};
   padding: ${props => (props.padding ? props.padding + "px" : "0px")};
+  margin: ${props => (props.margin ? props.margin : "0px")};
   background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
   color: ${props => (props.color ? props.color : "#fff")};
   border-radius: 62px;
@@ -16,32 +17,11 @@ export const Wrapper = styled.div`
 
 export const InnerWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-`;
-
-export const MenuList = styled.ul`
-  border-bottom: 2px solid #424242;
-  width: 30%;
-  margin: 0 16px;
-`;
-
-export const MenuListItem = styled.li`
-  font-family: Roboto;
-  font-size: 18px;
-  margin: 16px 0;
-`;
-
-export const MenuProduct = styled.div`
-  display: flex;
-  justify-content: space-between;
+  justify-content: ${props => (props.spacing ? props.spacing : "center")};
   align-items: center;
-  width: 100%;
+  flex-direction: column;
+  width: ${props => (props.width ? props.width + "%" : "100%")};
   height: 100%;
-  padding-right: 32px;
 `;
 
 export const Column = styled.div`

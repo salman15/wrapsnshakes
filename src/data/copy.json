@@ -49,6 +49,23 @@
                         {
                             "product": "Strawbarrey",
                             "price": "2.50"
+                        }
+                    ]
+                },
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
                         },
                         {
                             "product": "Strawbarrey",
@@ -56,6 +73,50 @@
                         }
                     ]
                 },
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        }
+                    ]
+                },
+                {
+                    "title": "Milkshakes",
+                    "products": [
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        },
+                        {
+                            "product": "Strawbarrey",
+                            "price": "2.50"
+                        }
+                    ]
+                }
+            ],
+            "menuItems2": [
                 {
                     "title": "Milkshakes",
                     "products": [
