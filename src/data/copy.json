@@ -28,150 +28,77 @@
             "bgImage": "https://i.pinimg.com/originals/b1/d0/1a/b1d01a377009e0d59fce582b99b60b32.jpg",
             "menuItems": [
                 {
-                    "title": "Milkshakes",
+                    "title": "Wraps",
                     "products": [
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Chicken on Fire",
+                            "price": "7.50"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Tendery Chicken",
+                            "price": "6.95"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Running Cow",
+                            "price": "7.50"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Spicy Sausage Party",
+                            "price": "6.95"
                         }
                     ]
                 },
                 {
-                    "title": "Milkshakes",
+                    "title": "Wraps (v)",
                     "products": [
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Crispy Falafel",
+                            "price": "6.95"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Go Veggie or Go Home",
+                            "price": "6.95"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "OMG It's Vegan",
+                            "price": "7.50"
                         }
                     ]
                 },
                 {
-                    "title": "Milkshakes",
+                    "title": "Bites",
                     "products": [
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Popeye's Mini Pie",
+                            "price": "1.25"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        }
-                    ]
-                },
-                {
-                    "title": "Milkshakes",
-                    "products": [
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Cheesy Bites",
+                            "price": "1.25"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Sweet Nutty Dough",
+                            "price": "1.50"
                         }
                     ]
                 }
             ],
             "menuItems2": [
+                
                 {
-                    "title": "Milkshakes",
+                    "title": "Drinks",
                     "products": [
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Soda's",
+                            "price": "2.20"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Homemade Ice-Tea",
+                            "price": "2.95"
                         },
                         {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        }
-                    ]
-                },
-                {
-                    "title": "Milkshakes",
-                    "products": [
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
-                        },
-                        {
-                            "product": "Strawbarrey",
-                            "price": "2.50"
+                            "product": "Milky way Shake",
+                            "price": "2.95"
                         }
                     ]
                 }
