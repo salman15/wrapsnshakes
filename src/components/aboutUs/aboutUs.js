@@ -20,9 +20,7 @@ export const AboutUs = ({ bgColor, title, children, id }) => {
         <SpacerImage src={copy.general.icons.spacerWhite} />
         <Column width={50} spacing="center">
           <ColumnText>
-            <p>
-              {children}
-            </p>
+            {children}
           </ColumnText>
         </Column>
       </ContentBlock>

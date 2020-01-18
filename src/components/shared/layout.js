@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  position: relative;
   display: flex;
   justify-content: ${props => (props.spacing ? props.spacing : "center")};
   align-items: ${props => (props.position ? props.position : "center")};
@@ -15,6 +14,7 @@ export const Wrapper = styled.div`
   color: ${props => (props.color ? props.color : "#fff")};
   ${"" /* border-radius: 62px; */};
   @media (max-width: 475px) {
+    position: relative;
     flex-direction: column;
     height: 100%;
     margin: 20px 0;
@@ -59,7 +59,12 @@ export const Column = styled.div`
 //   border-radius: 50%;
 // `;
 
-export const SpacerImage = styled.img``;
+export const SpacerImage = styled.img`
+  @media (max-width: 475px) {
+    width: 30px;
+    padding: 20px 0;
+  }
+`;
 
 export const Button = styled.a`
   border-radius: 43.5px;
@@ -81,6 +86,10 @@ export const ColumnText = styled.p`
   font-size: 32px;
   font-weight: 300;
   font-style: ${props => (props.fontStyle ? props.fontStyle : "italic")};
+  @media (max-width: 475px) {
+    font-size: 24px;
+    padding: 24px 0;
+  }
 `;
 
 export const FoodImage = styled.img`width: 100%;`;
@@ -88,13 +97,15 @@ export const FoodImage = styled.img`width: 100%;`;
 export const Title = styled.h1`
   font-size: 159px;
   font-style: italic;
+  text-align: center;
   @media (max-width: 475px) {
     font-size: 100px;
   }
 `;
 
 export const MobilePadding = styled.div`
-  @media (max-width: 475px) {
+  width: 100%;
+  @media (max-width: 1100px) {
     padding: 20px;
   }
 `;

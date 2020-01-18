@@ -61,8 +61,12 @@ const FoodTitle = styled.h1`
   font-style: italic;
   position: relative;
   z-index: 2;
-  @media (max-width: 475px) {
+  @media (max-width: 1100px) {
+    width: 100%;
+    text-align: right;
     padding: 20px;
+  }
+  @media (max-width: 475px) {
     margin: 0;
   }
 `;
@@ -86,7 +90,7 @@ const ImageBlockTwist = styled.div`
   transform: rotate(-45deg);
   position: absolute;
   left: -150px;
-  @media (max-width: 475px) {
+  @media (max-width: 1100px) {
     opacity: 0.3;
   }
 `;

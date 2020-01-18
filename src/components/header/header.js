@@ -110,10 +110,12 @@ const HeaderIcon = styled.img`
   right: ${props => (props.right ? props.right + "px" : "initial")};
   object-fit: cover;
   width: ${props => (props.width ? props.width + "px" : "400px")};
+  @media (max-width: 1300px) {
+    display: ${props => (props.centerImage ? "initial" : "none")};
+  }
   @media (max-width: 475px) {
     bottom: -125px;
     width: 300px;
-    display: ${props => (props.centerImage ? "initial" : "none")};
   }
 `;
 

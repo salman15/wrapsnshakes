@@ -68,7 +68,6 @@ export const FoodMenu = () => {
           </InnerWrapper>
         </Wrapper>
       </MobilePadding>
-
       <Veggies src="/assets/images/vegies.png" />
     </Wrapper>
   );
@@ -78,7 +77,7 @@ const Veggies = styled.img`
   position: absolute;
   right: 0;
   z-index: 1;
-  @media (max-width: 475px) {
+  @media (max-width: 1300px) {
     opacity: 0.3;
   }
 `;
@@ -124,4 +123,9 @@ const MenuProduct = styled.div`
   height: 100%;
   padding-right: 32px;
 `;
-const Logo = styled.img`margin: 150px 0;`;
+const Logo = styled.img`
+  margin: 150px 0;
+  @media (max-width: 475px) {
+    display: none;
+  }
+`;
