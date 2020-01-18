@@ -147,6 +147,9 @@
                 "foodora" : "/assets/images/icons/foodora-icon.png",
                 "google" : "/assets/images/icons/google-icon.png"
             }
+        },
+        "aboutUs": {
+            "text": "“De Libanese keuken is een keuken van de zon en een keuken uit het hart”. De kleuren weerspiegelen de 1001 zonnige landschappen en de diversiteit roept de overvloedige Libanese vrijgevigheid en gastvrijheid op."
         }
     }
 }

@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   height: ${props => (props.height ? props.height : "100%")};
   padding: ${props => (props.padding ? props.padding + "px" : "0px")};
   background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
+  color: ${props => (props.color ? props.color : "#fff")};
   border-radius: 62px;
 `;
 
@@ -51,7 +52,8 @@ export const Column = styled.div`
   align-items: center;
   width: ${props => (props.width ? props.width + "%" : "100%")};
   height: 100%;
-  flex-direction; column;
+  flex-direction: ${props => (props.direction ? props.direction : "column")};
+  text-align: ${props => (props.alignText ? props.alignText : "left")};
 `;
 
 export const ImageBlockTwist = styled.div`
@@ -80,80 +82,6 @@ export const ImageBlock = styled.img`width: 200px;`;
 //   border-radius: 50%;
 // `;
 
-export const Header = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  background-image: ${props => "url(" + props.bgImage + ")"};
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  min-height: 70vh;
-  margin-bottom: 200px;
-  &:before {
-    content: " ";
-    display: flex;
-    position: absolute;
-    width: calc(100% + 1000px);
-    height: 140vh;
-    bottom: 0px;
-    background-color: #dd99bb;
-    border-radius: 50%;
-  }
-`;
-
-export const HeaderTitle = styled.h1`
-  font-weight: 100;
-  font-size: 200px;
-  z-index: 1;
-  margin-bottom: 0;
-`;
-
-export const HeaderContentWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 400px;
-`;
-
-export const HeaderSubTitle = styled.p`
-  font-weight: 200;
-  font-size: 32px;
-  z-index: 1;
-  font-style: italic;
-`;
-
-export const HeaderIcon = styled.img`
-  position: absolute;
-  bottom: ${props => (props.bottom ? props.bottom + "px" : "-200px")};
-  left: ${props => (props.left ? props.left + "px" : "initial")};
-  right: ${props => (props.right ? props.right + "px" : "initial")};
-  object-fit: cover;
-  width: ${props => (props.width ? props.width + "px" : "400px")};
-`;
-
-export const HeaderIconContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
-
-export const HeaderNav = styled.nav`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 60px;
-  /*width: 80%;*/
-  width: 1149px;
-  z-index: 1;
-  margin: 24px 0;
-`;
-
 export const SpacerImage = styled.img``;
 
 export const Button = styled.a`
@@ -172,9 +100,10 @@ export const Button = styled.a`
 `;
 
 export const ColumnText = styled.p`
-  font-style: italic;
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: ${props => (props.fontStyle ? props.fontStyle : "italic")};
 `;
 
 export const FoodImage = styled.img`width: 100%;`;
