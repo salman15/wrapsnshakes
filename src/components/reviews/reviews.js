@@ -5,7 +5,7 @@ import copy from "../../data/copy.json";
 
 export const Reviews = () => {
   return (
-    <Wrapper bgColor="transparent" width={"1149px"} height="70vh">
+    <Wrapper bgColor="transparent" width={"1149px"} height="70vh" id="reviews">
       <Wrapper
         bgColor="transparent"
         width={100}

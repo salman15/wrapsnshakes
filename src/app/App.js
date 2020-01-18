@@ -7,9 +7,32 @@ import {
   FoodMenu,
   MainHeader,
   Reviews,
-  Contact
+  Contact,
+  MenuOverlay
 } from "../components";
 import copy from "../data/copy.json";
+
+const App = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  return (
+    <div className="App-body">
+      <Container>
+        <MainHeader openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <AboutUs bgColor="#7B506F" title="About Us" id="aboutUs">
+          {copy.pages.aboutUs.text}
+        </AboutUs>
+        <OurFood />
+        <FoodMenu />
+        <AboutUs bgColor="#1F1A38" title="About Us" id="">
+          {copy.pages.aboutUs.text}
+        </AboutUs>
+        <Reviews />
+        <Contact />
+        <MenuOverlay openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      </Container>
+    </div>
+  );
+};
 
 const Container = styled.div`
   display: flex;
@@ -19,26 +42,5 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 `;
-
-const App = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-  return (
-    <div className="App-body">
-      <Container>
-        <MainHeader openMenu={openMenu} setOpenMenu={setOpenMenu} />
-        <AboutUs bgColor="#7B506F" title="About Us">
-          {copy.pages.aboutUs.text}
-        </AboutUs>
-        <OurFood />
-        <FoodMenu />
-        <AboutUs bgColor="#1F1A38" title="About Us">
-          {copy.pages.aboutUs.text}
-        </AboutUs>
-        <Reviews />
-        <Contact />
-      </Container>
-    </div>
-  );
-};
 
 export default App;

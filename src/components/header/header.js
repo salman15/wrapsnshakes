@@ -7,7 +7,7 @@ export const MainHeader = ({ openMenu, setOpenMenu }) => {
   return (
     <Header>
       <HeaderNav>
-        <Button>Reserveer</Button>
+        {/* <Button>Reserveer</Button> */}
         <BurgerMenu open={openMenu} setOpen={setOpenMenu} />
       </HeaderNav>
       <HeaderContentWrapper>
@@ -119,6 +119,6 @@ const HeaderNav = styled.nav`
   height: 60px;
   /*width: 80%;*/
   width: 1149px;
-  z-index: 1;
+  z-index: 2;
   margin: 24px 0;
 `;

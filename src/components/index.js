@@ -8,3 +8,4 @@ export { OurFood } from "./ourFood/ourFood";
 export { FoodMenu } from "./FoodMenu/foodMenu";
 export { Reviews } from "./reviews/reviews";
 export { Contact } from "./contact/contact";
+export { MenuOverlay } from "./overlay/menu";

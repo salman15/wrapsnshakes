@@ -2,8 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+export const BurgerMenu = ({ setOpen, open }) => {
+  return (
+    <Container open={open} onClick={() => setOpen(!open)}>
+      <Burger open={open} />
+    </Container>
+  );
+};
+
 const Container = styled.div`
-  position: relative;
+  position: ${props => (props.open ? "fixed" : "relative")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +24,7 @@ const Container = styled.div`
   height: 50px;
   width: 50px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 2;
 `;
 const Burger = styled.div`
   background-color: white;
@@ -52,14 +61,6 @@ const Burger = styled.div`
     border-radius: 50px;
   }
 `;
-
-export const BurgerMenu = ({ setOpen, open }) => {
-  return (
-    <Container onClick={() => setOpen(!open)}>
-      <Burger open={open} />
-    </Container>
-  );
-};
 
 BurgerMenu.propTypes = {
   setOpen: PropTypes.func,

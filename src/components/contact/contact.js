@@ -5,7 +5,7 @@ import copy from "../../data/copy.json";
 
 export const Contact = () => {
   return (
-    <Wrapper bgColor="rgba(247,244,244,0.49)">
+    <Wrapper bgColor="rgba(247,244,244,0.49)" id="contact">
       <Wrapper bgColor="transparent" width={"1149px"} color="#292929">
         <Title>
           {copy.pages.contact.title}
@@ -16,19 +16,19 @@ export const Contact = () => {
           </ContactType>
           <ContactText>
             {copy.pages.contact.email.support.title}
-            <a href={"emailto:" + copy.pages.contact.email.support.email}>
+            <a href={"mailto:" + copy.pages.contact.email.support.email}>
               {copy.pages.contact.email.support.email}
             </a>
           </ContactText>
           <ContactText>
             {copy.pages.contact.email.work.title}
-            <a href={"emailto:" + copy.pages.contact.email.work.email}>
+            <a href={"mailto:" + copy.pages.contact.email.work.email}>
               {copy.pages.contact.email.work.email}
             </a>
           </ContactText>
           <ContactText>
             {copy.pages.contact.email.info.title}
-            <a href={"emailto:" + copy.pages.contact.email.info.email}>
+            <a href={"mailto:" + copy.pages.contact.email.info.email}>
               {copy.pages.contact.email.info.email}
             </a>
           </ContactText>
@@ -39,7 +39,7 @@ export const Contact = () => {
           </ContactType>
           <ContactText>
             {copy.pages.contact.tel.text}{" "}
-            <a href={"callto:" + copy.pages.contact.tel.number}>
+            <a href={"tel:" + copy.pages.contact.tel.number}>
               {copy.pages.contact.tel.number}
             </a>
           </ContactText>

@@ -2,9 +2,9 @@ import React from "react";
 import { Wrapper, Column, SpacerImage, ContentBlock, ColumnText } from "../";
 import copy from "../../data/copy.json";
 
-export const AboutUs = ({ bgColor, title, children }) => {
+export const AboutUs = ({ bgColor, title, children, id }) => {
   return (
-    <Wrapper bgColor="transparent" width={"1149px"} height={"80vh"}>
+    <Wrapper bgColor="transparent" width={"1149px"} height={"80vh"} id={id}>
       <ContentBlock
         color="#fff"
         direction="row"

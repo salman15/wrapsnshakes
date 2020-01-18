@@ -29,7 +29,7 @@ const FoodTextTitle = styled.h4`
 
 export const OurFood = () => {
   return (
-    <Wrapper bgColor="rgba(247,244,244,0.49)" height="90vh">
+    <Wrapper bgColor="rgba(247,244,244,0.49)" height="90vh" id="ourFood">
       <Wrapper bgColor="transparent" width={"1149px"} color="#292929">
         <FoodTitle>Our Food</FoodTitle>
 
