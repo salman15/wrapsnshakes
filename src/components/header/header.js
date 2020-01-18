@@ -31,7 +31,10 @@ export const MainHeader = ({ openMenu, setOpenMenu }) => {
           bottom={-150}
           width={250}
         />
-        <HeaderIcon src={copy.pages.landing.ingredients[0]} />
+        <HeaderIcon
+          src={copy.pages.landing.ingredients[0]}
+          centerImage={true}
+        />
         <HeaderIcon
           src={copy.pages.landing.ingredients[3]}
           right={-60}
@@ -79,6 +82,9 @@ const HeaderTitle = styled.h1`
   font-size: 200px;
   z-index: 1;
   margin-bottom: 0;
+  @media (max-width: 662px) {
+    font-size: 100px;
+  }
 `;
 
 const HeaderContentWrapper = styled.div`
@@ -87,6 +93,7 @@ const HeaderContentWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 100px;
+  text-align: center;
 `;
 
 const HeaderSubTitle = styled.p`
@@ -103,6 +110,11 @@ const HeaderIcon = styled.img`
   right: ${props => (props.right ? props.right + "px" : "initial")};
   object-fit: cover;
   width: ${props => (props.width ? props.width + "px" : "400px")};
+  @media (max-width: 475px) {
+    bottom: -125px;
+    width: 300px;
+    display: ${props => (props.centerImage ? "initial" : "none")};
+  }
 `;
 
 const HeaderIconContainer = styled.div`
@@ -110,15 +122,21 @@ const HeaderIconContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  @media (max-width: 475px) {
+    position: absolute;
+    bottom: -100px;
+  }
 `;
 
 const HeaderNav = styled.nav`
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 60px;
   /*width: 80%;*/
   width: 1149px;
-  z-index: 2;
+  max-width: 100%;
+  z-index: 101;
   margin: 24px 0;
 `;

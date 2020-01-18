@@ -24,7 +24,12 @@ const Container = styled.div`
   height: 50px;
   width: 50px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 101;
+
+  @media (max-width: 475px) {
+    position: fixed;
+    right: 0px;
+  }
 `;
 const Burger = styled.div`
   background-color: white;

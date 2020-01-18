@@ -24,7 +24,7 @@ export const Slider = ({ data }) => {
 
   return (
     <Container>
-      <Wrapper
+      <ControllerContainer
         bgColor="transparent"
         direction="row"
         spacing="space-between"
@@ -37,7 +37,7 @@ export const Slider = ({ data }) => {
             index={index}
           />
         )}
-      </Wrapper>
+      </ControllerContainer>
 
       <Wrapper
         bgColor="transparent"
@@ -59,11 +59,21 @@ export const Slider = ({ data }) => {
 const Container = styled.div`
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   flex-direction: column;
   width: 50%;
+`;
+
+const ControllerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+  width: 100%;
+  margin: 40px 0;
 `;
 
 const Quote = styled.p`

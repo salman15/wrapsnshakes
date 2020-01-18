@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: ${props => (props.spacing ? props.spacing : "center")};
   align-items: ${props => (props.position ? props.position : "center")};
@@ -13,6 +14,11 @@ export const Wrapper = styled.div`
   background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
   color: ${props => (props.color ? props.color : "#fff")};
   ${"" /* border-radius: 62px; */};
+  @media (max-width: 475px) {
+    flex-direction: column;
+    height: 100%;
+    margin: 20px 0;
+  }
 `;
 
 export const InnerWrapper = styled.div`
@@ -22,6 +28,9 @@ export const InnerWrapper = styled.div`
   flex-direction: column;
   width: ${props => (props.width ? props.width + "%" : "100%")};
   height: 100%;
+  @media (max-width: 475px) {
+    width: 100%;
+  }
 `;
 
 export const Column = styled.div`
@@ -34,26 +43,14 @@ export const Column = styled.div`
   height: ${props => (props.height ? props.height : "100%")};
   flex-direction: ${props => (props.direction ? props.direction : "column")};
   text-align: ${props => (props.alignText ? props.alignText : "left")};
+  z-index: ${props => (props.index ? props.index : "0")};
+  position: relative;
+  @media (max-width: 475px) {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
 `;
-
-export const ImageBlockTwist = styled.div`
-  transform: rotate(-45deg);
-  position: absolute;
-  left: -150px;
-`;
-
-export const ImageBlockContainer = styled.div`
-  display: flex;
-  justify-content: ${props => (props.spacing ? props.spacing : "center")};
-  align-items: center;
-  width: ${props => (props.width ? props.width : "initial")};
-  background-color: white;
-  margin: 32px;
-  padding: 64px;
-  border-radius: 17px;
-`;
-
-export const ImageBlock = styled.img`width: 200px;`;
 
 // export const Ball = styled.span`
 //   background-color: white;
@@ -91,4 +88,13 @@ export const FoodImage = styled.img`width: 100%;`;
 export const Title = styled.h1`
   font-size: 159px;
   font-style: italic;
+  @media (max-width: 475px) {
+    font-size: 100px;
+  }
+`;
+
+export const MobilePadding = styled.div`
+  @media (max-width: 475px) {
+    padding: 20px;
+  }
 `;

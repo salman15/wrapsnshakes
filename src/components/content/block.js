@@ -44,11 +44,17 @@ const Block = styled.div`
     font-size: 124px;
     font-weight: 100;
     margin: 0;
+    @media (max-width: 475px) {
+      font-size: 80px;
+    }
   }
   h3 {
     font-weight: 100;
     font-size: 60px;
     margin: 40px 0;
+  }
+  @media (max-width: 475px) {
+    flex-direction: column;
   }
 `;
 

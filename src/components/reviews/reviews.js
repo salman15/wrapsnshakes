@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Wrapper, Column, SpacerImage, ContentBlock, Slider } from "../";
+import { Wrapper, SpacerImage, ContentBlock, Slider } from "../";
 import copy from "../../data/copy.json";
 
 export const Reviews = () => {
@@ -13,7 +13,7 @@ export const Reviews = () => {
         spacing="space-between"
       >
         <Column width={45} height="initial">
-          <Wrapper
+          <IconContainer
             bgColor="transparent"
             width="100%"
             direction="row"
@@ -21,8 +21,8 @@ export const Reviews = () => {
           >
             <CompanyIcon src={copy.pages.reviews.icons.google} />
             <CompanyIcon src={copy.pages.reviews.icons.foodora} />
-          </Wrapper>
-          <Wrapper
+          </IconContainer>
+          <IconContainer
             bgColor="transparent"
             width="100%"
             direction="row"
@@ -30,7 +30,7 @@ export const Reviews = () => {
           >
             <CompanyIcon src={copy.pages.reviews.icons.uber} />
             <CompanyIcon src={copy.pages.reviews.icons.thuisbezorgd} />
-          </Wrapper>
+          </IconContainer>
         </Column>
         <Column width={50} spacing="center">
           <ContentBlock bgColor="#D8D8D8" color="#292929" spacing="center">
@@ -46,4 +46,36 @@ export const Reviews = () => {
   );
 };
 
-const CompanyIcon = styled.img`margin: 50px 0;`;
+export const Column = styled.div`
+  display: flex;
+  justify-content: ${props =>
+    props.spacing ? props.spacing : " space-between"};
+
+  align-items: center;
+  width: ${props => (props.width ? props.width + "%" : "100%")};
+  height: ${props => (props.height ? props.height : "100%")};
+  flex-direction: ${props => (props.direction ? props.direction : "column")};
+  text-align: ${props => (props.alignText ? props.alignText : "left")};
+  z-index: ${props => (props.index ? props.index : "0")};
+  position: relative;
+  @media (max-width: 475px) {
+    width: 100%;
+    position: relative;
+  }
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+`;
+
+const CompanyIcon = styled.img`
+  margin: 50px 0;
+  @media (max-width: 475px) {
+    margin: 25px 0;
+    width: 100px;
+  }
+`;

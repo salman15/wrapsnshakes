@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { Wrapper, Column, SpacerImage, ContentBlock, ColumnText } from "../";
 import copy from "../../data/copy.json";
 
@@ -12,9 +13,9 @@ export const AboutUs = ({ bgColor, title, children, id }) => {
         bgColor={bgColor}
       >
         <Column width={40} spacing="center">
-          <h2>
+          <Title>
             {title}
-          </h2>
+          </Title>
         </Column>
         <SpacerImage src={copy.general.icons.spacerWhite} />
         <Column width={50} spacing="center">
@@ -28,3 +29,5 @@ export const AboutUs = ({ bgColor, title, children, id }) => {
     </Wrapper>
   );
 };
+
+const Title = styled.h2``;

@@ -40,5 +40,5 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   background-color: #00000094;
-  z-index: 1;
+  z-index: 100;
 `;
