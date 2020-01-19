@@ -16,7 +16,7 @@ export const MenuOverlay = ({ openMenu, setOpenMenu }) => {
       <MenuItem href="#reviews" onClick={() => setOpenMenu(false)}>
         Reviews
       </MenuItem>
-      <MenuItem href="#contactUs" onClick={() => setOpenMenu(false)}>
+      <MenuItem href="#contact" onClick={() => setOpenMenu(false)}>
         Contact us
       </MenuItem>
     </Overlay>

@@ -6,7 +6,7 @@ import copy from "../../data/copy.json";
 
 export const FoodMenu = () => {
   return (
-    <Wrapper color="#292929" width="1149px" margin="300px 0 0 0" id="ourFood">
+    <Wrapper color="#292929" width="1149px" margin="300px 0 0 0" id="ourMenu">
       <MobilePadding>
         <MenuTitle>
           {copy.pages.menu.subTitle}
