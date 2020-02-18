@@ -18,12 +18,16 @@ const App = () => {
     <div className="App-body">
       <Container>
         <MainHeader openMenu={openMenu} setOpenMenu={setOpenMenu} />
-        <AboutUs bgColor="#7B506F" title="About Us" id="aboutUs">
-          {copy.pages.aboutUs.text}
+        <AboutUs
+          bgColor="#7B506F"
+          title={copy.pages.ourKitchen.title}
+          id="aboutUs"
+        >
+          {copy.pages.ourKitchen.text}
         </AboutUs>
         <OurFood />
         <FoodMenu />
-        <AboutUs bgColor="#1F1A38" title="About Us" id="">
+        <AboutUs bgColor="#1F1A38" title={copy.pages.aboutUs.title} id="">
           {copy.pages.aboutUs.text}
         </AboutUs>
         <Reviews />

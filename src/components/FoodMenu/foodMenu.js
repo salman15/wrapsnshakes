@@ -125,6 +125,7 @@ const MenuProduct = styled.div`
 `;
 const Logo = styled.img`
   margin: 150px 0;
+  z-index: 2;
   @media (max-width: 475px) {
     display: none;
   }

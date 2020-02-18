@@ -20,7 +20,7 @@ export const AboutUs = ({ bgColor, title, children, id }) => {
         <SpacerImage src={copy.general.icons.spacerWhite} />
         <Column width={50} spacing="center">
           <ColumnText>
-            {children}
+            {`"${children}"`}
           </ColumnText>
         </Column>
       </ContentBlock>
@@ -28,4 +28,4 @@ export const AboutUs = ({ bgColor, title, children, id }) => {
   );
 };
 
-const Title = styled.h2``;
+const Title = styled.h2`text-align: center;`;

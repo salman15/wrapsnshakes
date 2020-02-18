@@ -92,6 +92,7 @@ const ImageBlockTwist = styled.div`
   left: -150px;
   @media (max-width: 1100px) {
     opacity: 0.3;
+    left: -200px;
   }
 `;
 

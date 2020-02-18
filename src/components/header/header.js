@@ -5,7 +5,7 @@ import copy from "../../data/copy.json";
 
 export const MainHeader = ({ openMenu, setOpenMenu }) => {
   return (
-    <Header>
+    <Header bgImage={copy.pages.landing.bgImage}>
       <HeaderNav>
         {/* <Button>Reserveer</Button> */}
         <BurgerMenu open={openMenu} setOpen={setOpenMenu} />
@@ -58,7 +58,7 @@ const Header = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background-image: ${props => "url(" + props.bgImage + ")"};
+  ${"" /* background-image: ${props => "url(" + props.bgImage + ")"}; */};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -74,6 +74,9 @@ const Header = styled.div`
     bottom: 0px;
     background-color: #dd99bb;
     border-radius: 50%;
+    background-image: ${props => `url(${props.bgImage})`};
+    background-size: contain;
+    background-position: center;
   }
 `;
 

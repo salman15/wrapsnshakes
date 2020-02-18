@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -82,14 +82,17 @@ export const Button = styled.a`
 `;
 
 export const ColumnText = styled.p`
+  ${({ fontStyle, textAlign }) => css`
   font-family: Roboto;
   font-size: 32px;
   font-weight: 300;
-  font-style: ${props => (props.fontStyle ? props.fontStyle : "italic")};
+  text-align: ${textAlign || "left"};
+  font-style: ${fontStyle || "italic"};
   @media (max-width: 475px) {
     font-size: 24px;
     padding: 24px 0;
   }
+  `};
 `;
 
 export const FoodImage = styled.img`width: 100%;`;
