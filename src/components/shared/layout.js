@@ -1,17 +1,36 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: ${props => (props.spacing ? props.spacing : "center")};
-  align-items: ${props => (props.position ? props.position : "center")};
-  flex-direction: ${props => (props.direction ? props.direction : "column")};
-  width: ${props => (props.width ? props.width : "100%")};
-  max-width: 100%;
-  height: ${props => (props.height ? props.height : "100%")};
-  padding: ${props => (props.padding ? props.padding + "px" : "0px")};
-  margin: ${props => (props.margin ? props.margin : "0px")};
-  background-color: ${props => (props.bgColor ? props.bgColor : "#ffffff9e")};
-  color: ${props => (props.color ? props.color : "#fff")};
+  ${({
+    spacing,
+    position,
+    direction,
+    width,
+    height,
+    padding,
+    margin,
+    bgColor,
+    color,
+    bgImage,
+    borderRadius,
+    boxShadow
+  }) => css`
+    display: flex;
+    justify-content: ${spacing || "center"};
+    align-items: ${position || "center"};
+    flex-direction: ${direction || "column"};
+    width: ${width || "100%"};
+    max-width: 100%;
+    height: ${height || "100%"};
+    padding: ${padding + "px" || "0px"};
+    margin: ${margin || "0px"};
+    background-color: ${bgColor || "#ffffff9e"};
+    background-image: url(${bgImage || "none"});
+    background-position: repeat;
+    color: ${color || "#fff"};
+    border-radius: ${borderRadius || "0"};
+    box-shadow: ${boxShadow || "none"}
+`};
   ${"" /* border-radius: 62px; */};
   @media (max-width: 475px) {
     position: relative;

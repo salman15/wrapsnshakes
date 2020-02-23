@@ -187,7 +187,9 @@
               "price": "6.95"
             }
           ]
-        },
+        }
+      ],
+      "menuItems2": [
         {
           "title": "Bites",
           "products": [
@@ -216,9 +218,7 @@
               "price": "3.00"
             }
           ]
-        }
-      ],
-      "menuItems2": [
+        },
         {
           "title": "HOMEMADE DRINKS",
           "products": [
@@ -241,106 +241,106 @@
               "price": "3.50"
             },
             {
-                "product": "dutch cookie",
-                "description": "",
-  
-                "price": "3.50"
-              },
-              {
-                "product": "caramel goldie",
-                "description": "",
-  
-                "price": "3.50"
-              },
-              {
-                "product": "healthy fruit",
-                "description": "",
-  
-                "price": "3.50"
-              }
+              "product": "dutch cookie",
+              "description": "",
+
+              "price": "3.50"
+            },
+            {
+              "product": "caramel goldie",
+              "description": "",
+
+              "price": "3.50"
+            },
+            {
+              "product": "healthy fruit",
+              "description": "",
+
+              "price": "3.50"
+            }
           ]
         },
         {
-            "title": "SOFT DRINKS",
-            "products": [
-              {
-                "product": "Soda's",
-                "description": "coca cola | coca cola zero | coca cola light fanta sprite | cassis ice tea sparkling | ice tea green ginger ale | tonic | bitter lemon chaudfontaine | chaudfontaine sparkling apple juice | fristi | chocomel",
-  
-                "price": "2.50"
-              }
-            ]
-          },
-          {
-            "title": "HOT DRINKS",
-            "products": [
-              {
-                "product": "tea",
-                "description": "",
-  
-                "price": "2.50"
-              },
-              {
-                "product": "coffee",
-                "description": "",
-  
-                "price": "2.50"
-              },
-              {
-                "product": "espresso",
-                "description": "",
-  
-                "price": "2.50"
-              },
-              {
-                "product": "hot coco",
-                "description": "",
-  
-                "price": "2.50"
-              },
-              {
-                "product": "cappuccino",
-                "description": "",
-  
-                "price": "2.70"
-              },
-              {
-                "product": "latte macchiato",
-                "description": "",
-  
-                "price": "2.70"
-              },
-              {
-                "product": "mint tea",
-                "description": "",
-  
-                "price": "2.70"
-              }
-            ]
-          },
-          {
-            "title": "SWEETS",
-            "products": [
-              {
-                "product": "CHEESECAKE",
-                "description": "",
-  
-                "price": "3.50"
-              },
-              {
-                "product": "CARROT CAKE",
-                "description": "",
-  
-                "price": "2.95"
-              },
-              {
-                "product": "RED VELVET CAKE",
-                "description": "",
-  
-                "price": "3.50"
-              }
-            ]
-          }
+          "title": "SOFT DRINKS",
+          "products": [
+            {
+              "product": "Soda's",
+              "description": "coca cola | coca cola zero | coca cola light fanta sprite | cassis ice tea sparkling | ice tea green ginger ale | tonic | bitter lemon chaudfontaine | chaudfontaine sparkling apple juice | fristi | chocomel",
+
+              "price": "2.50"
+            }
+          ]
+        },
+        {
+          "title": "HOT DRINKS",
+          "products": [
+            {
+              "product": "tea",
+              "description": "",
+
+              "price": "2.50"
+            },
+            {
+              "product": "coffee",
+              "description": "",
+
+              "price": "2.50"
+            },
+            {
+              "product": "espresso",
+              "description": "",
+
+              "price": "2.50"
+            },
+            {
+              "product": "hot coco",
+              "description": "",
+
+              "price": "2.50"
+            },
+            {
+              "product": "cappuccino",
+              "description": "",
+
+              "price": "2.70"
+            },
+            {
+              "product": "latte macchiato",
+              "description": "",
+
+              "price": "2.70"
+            },
+            {
+              "product": "mint tea",
+              "description": "",
+
+              "price": "2.70"
+            }
+          ]
+        },
+        {
+          "title": "SWEETS",
+          "products": [
+            {
+              "product": "CHEESECAKE",
+              "description": "",
+
+              "price": "3.50"
+            },
+            {
+              "product": "CARROT CAKE",
+              "description": "",
+
+              "price": "2.95"
+            },
+            {
+              "product": "RED VELVET CAKE",
+              "description": "",
+
+              "price": "3.50"
+            }
+          ]
+        }
       ]
     },
     "food": {
