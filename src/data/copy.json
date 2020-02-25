@@ -385,15 +385,15 @@
         "title": "Email",
         "support": {
           "title": "For Support:",
-          "email": "support@wrapnshakes.nl"
+          "email": "support@thewrapbar.nl"
         },
         "work": {
           "title": "To join our team:",
-          "email": "work@wrapnshakes.nl"
+          "email": "work@thewrapbar.nl"
         },
         "info": {
           "title": "For questions:",
-          "email": "info@wrapnshakes.nl"
+          "email": "info@thewrapbar.nl"
         }
       },
       "tel": {
@@ -425,12 +425,13 @@
       ],
       "social": [
         {
-          "content": "Instagram: @wrapsnshakes"
+          "content": "Instagram: @thewrapbar"
         },
         {
-          "content": "Facebook: @wrapsnshakes"
+          "content": "Facebook: @thewrapbar"
         }
       ]
     }
-  }
+  },
+  "copywright": "Copyright The Wrap Bar - 2020"
 }

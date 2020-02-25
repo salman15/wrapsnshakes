@@ -70,7 +70,9 @@ export const Contact = () => {
             </ContactList>
           </ContactListWrapper>
         </MobilePadding>
-        <Copyright>Copyright Wraps 'n Shakes - 2019</Copyright>
+        <Copyright>
+          {copy.copywright}
+        </Copyright>
       </Wrapper>
     </Wrapper>
   );
