@@ -5,7 +5,12 @@ import copy from "../../data/copy.json";
 
 export const OurFood = () => {
   return (
-    <Wrapper bgColor="rgba(247,244,244,0.49)" height="90vh" id="ourFood">
+    <Wrapper
+      bgColor="rgba(247,244,244,0.49)"
+      height="100vh"
+      id="ourFood"
+      padding="20"
+    >
       <ImageBlockTwist>
         <ImageBlockContainer spacing="flex-end">
           <ImageBlock src={copy.pages.food.second} />

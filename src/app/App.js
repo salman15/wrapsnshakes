@@ -32,7 +32,7 @@ const App = () => {
           <AboutUs bgColor="#1F1A38" title={copy.pages.aboutUs.title} id="">
             {copy.pages.aboutUs.text}
           </AboutUs>
-          <Reviews />
+          {/* <Reviews /> */}
           <Contact />
           <MenuOverlay openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </Container>

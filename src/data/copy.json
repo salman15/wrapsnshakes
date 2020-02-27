@@ -10,7 +10,7 @@
     "landing": {
       "title": "The Wrap Bar",
       "bg": "fff",
-      "bgImage": "https://recipes-secure-graphics.grocerywebsite.com/0_GraphicsRecipes/50_4k.jpg",
+      "bgImage": "assets/images/backgrounds/header-background-2.jpg",
       "ingredients": [
         "/assets/images/wrap.png",
         "/assets/images/parsley.png",

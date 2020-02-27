@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { BurgerMenu, Button } from "../";
+import { BurgerMenu } from "../";
 import copy from "../../data/copy.json";
 
 export const MainHeader = ({ openMenu, setOpenMenu }) => {
   return (
     <Header bgImage={copy.pages.landing.bgImage}>
       <HeaderNav>
-        {/* <Button>Reserveer</Button> */}
         <BurgerMenu open={openMenu} setOpen={setOpenMenu} />
       </HeaderNav>
       <HeaderContentWrapper>
@@ -78,6 +77,34 @@ const Header = styled.div`
     background-size: contain;
     background-position: center;
   }
+  &:after {
+    content: " ";
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: calc(100% + 1000px);
+    height: 140vh;
+    bottom: 0px;
+    background-color: #00000073;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 0;
+  }
+  @media (max-height: 850px) {
+    &:after,
+    &:before {
+      height: 180vh;
+    }
+  }
+  @media (max-height: 670px) {
+    &:after,
+    &:before {
+      height: 230vh;
+    }
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -113,6 +140,7 @@ const HeaderIcon = styled.img`
   right: ${props => (props.right ? props.right + "px" : "initial")};
   object-fit: cover;
   width: ${props => (props.width ? props.width + "px" : "400px")};
+  z-index: 1;
   @media (max-width: 1300px) {
     display: ${props => (props.centerImage ? "initial" : "none")};
   }
