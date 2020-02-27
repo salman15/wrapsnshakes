@@ -75,7 +75,7 @@ const Header = styled.div`
     background-color: #dd99bb;
     border-radius: 50%;
     background-image: ${props => `url(${props.bgImage})`};
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
   &:after {

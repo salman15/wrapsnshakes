@@ -15,7 +15,7 @@ import copy from "../data/copy.json";
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  return true
+  return false
     ? <FoodMenuPDF />
     : <div className="App-body">
         <Container>
