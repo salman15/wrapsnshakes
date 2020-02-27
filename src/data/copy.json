@@ -139,58 +139,6 @@
           ]
         },
         {
-          "title": "BURGERS",
-          "products": [
-            {
-              "product": "TENDERY CHICKEN",
-              "description": "grilled marinated chicken thighs with lettuce, tomato, red onion & chef’s sauce",
-              "price": "6.95"
-            },
-            {
-              "product": "SPICY CHICKEN",
-              "description": "grilled marinated chicken thighs with lettuce, tomato, red onion, jalapeno & spicy chef’s sauce",
-              "price": "6.95"
-            },
-            {
-              "product": "CHICKEN FAJITA",
-              "description": "fajita chicken with tomato, grilled bell pepper, grilled onion & guacamole",
-              "price": "6.95"
-            },
-            {
-              "product": "Running Cow",
-              "description": "beef burger with spices, lettuce, tomato,red onion, pickles & chef’s sauce",
-              "price": "6.95"
-            },
-            {
-              "product": "DELUXE COW",
-              "description": "beef burger with spices, tomato, red onion, pickles, fried egg, turkey bacon & chef’s sauce",
-              "price": "8.00"
-            }
-          ]
-        },
-        {
-          "title": "Burgers (v)",
-          "products": [
-            {
-              "product": "OMG IT’S VEGAN (v)",
-              "description": "roasted vegetables with avocado, tomato & chef’s vegan sauce",
-              "price": "6.95"
-            },
-            {
-              "product": "FALAFEL PARTY (v)",
-              "description": "fried crispy falafel with hummus, lettuce, tomato, red onion & chef’s garlic sauce",
-              "price": "6.95"
-            },
-            {
-              "product": "CHEESY DREAM (v)",
-              "description": "grilled halloumi cheese with red cabbage, carrot, avocado & chef’s sauce",
-              "price": "6.95"
-            }
-          ]
-        }
-      ],
-      "menuItems2": [
-        {
           "title": "Bites",
           "products": [
             {
@@ -218,7 +166,9 @@
               "price": "3.00"
             }
           ]
-        },
+        }
+      ],
+      "menuItems2": [
         {
           "title": "HOMEMADE DRINKS",
           "products": [

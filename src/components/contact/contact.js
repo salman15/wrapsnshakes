@@ -35,7 +35,7 @@ export const Contact = () => {
             </ContactText>
           </Wrapper>
           <Wrapper bgColor="transparent" color="#292929" margin="48px 0">
-            <ContactType>
+            {/* <ContactType>
               {copy.pages.contact.tel.title}
             </ContactType>
             <ContactText>
@@ -43,7 +43,22 @@ export const Contact = () => {
               <a href={"tel:" + copy.pages.contact.tel.number}>
                 {copy.pages.contact.tel.number}
               </a>
-            </ContactText>
+            </ContactText> */}
+            <Mapouter>
+              <Gmap_canvas>
+                <iframe
+                  width="600"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Rotterdam%20markthal&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                />
+                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+              </Gmap_canvas>
+            </Mapouter>
           </Wrapper>
 
           <ContactListWrapper>
@@ -77,6 +92,20 @@ export const Contact = () => {
     </Wrapper>
   );
 };
+
+const Mapouter = styled.div`
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+`;
+
+const Gmap_canvas = styled.div`
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+`;
 
 const ContactListWrapper = styled.div`
   display: flex;
