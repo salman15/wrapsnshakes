@@ -14,7 +14,8 @@ export const MainHeader = ({ openMenu, setOpenMenu }) => {
           {copy.pages.landing.title}
         </HeaderTitle>
         <HeaderSubTitle>
-          Fresh wraps,and crazy shakes! Visit us at the Markthal Rotterdam
+          Absolutely tasty wraps and delicious sides inspired by the Ancient
+          Middle-East. Experience this flavour combo at Rotterdam Markthal!
         </HeaderSubTitle>
       </HeaderContentWrapper>
       <HeaderIconContainer>
