@@ -14,8 +14,8 @@ export const MainHeader = ({ openMenu, setOpenMenu }) => {
           {copy.pages.landing.title}
         </HeaderTitle>
         <HeaderSubTitle>
-          Absolutely tasty wraps and delicious sides inspired by the Ancient
-          Middle-East. Experience this flavour combo at Rotterdam Markthal!
+          Absoluut smakelijke wraps en heerlijke bijgerechten geïnspireerd door
+          het oude Midden-Oosten. Ervaar deze smaakcombo bij Rotterdam Markthal!
         </HeaderSubTitle>
       </HeaderContentWrapper>
       <HeaderIconContainer>

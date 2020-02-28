@@ -25,7 +25,7 @@ export const OurFood = () => {
         </Column>
       </ImageBlockTwist>
       <Wrapper bgColor="transparent" width={"1149px"} color="#292929">
-        <FoodTitle>Our Food</FoodTitle>
+        <FoodTitle>Onze Eten</FoodTitle>
 
         <Wrapper bgColor="transparent" direction="row" color="#292929">
           {/* 
@@ -43,7 +43,7 @@ export const OurFood = () => {
             index={2}
           >
             <MobilePadding>
-              <FoodTextTitle>Food with a Twist</FoodTextTitle>
+              <FoodTextTitle>Eten met een Twist</FoodTextTitle>
               <ColumnText>
                 “De Libanese keuken is een keuken van de zon en een keuken uit
                 het hart”.

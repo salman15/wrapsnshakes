@@ -22,14 +22,14 @@ export const FoodMenu = () => {
               return (
                 <MenuList key={index}>
                   <MenuItemTitle>
-                    {item.title}
+                    {item.title.toUpperCase()}
                   </MenuItemTitle>
 
                   {item.products.map((item, index) => {
                     return (
                       <MenuProduct key={index}>
                         <MenuListItem>
-                          {item.product}
+                          {item.product.toUpperCase()}
                         </MenuListItem>
                         <MenuListItem>
                           {toCurrency(item.price)}
@@ -46,14 +46,14 @@ export const FoodMenu = () => {
               return (
                 <MenuList key={index}>
                   <MenuItemTitle>
-                    {item.title}
+                    {item.title.toUpperCase()}
                   </MenuItemTitle>
 
                   {item.products.map((item, index) => {
                     return (
                       <MenuProduct key={index}>
                         <MenuListItem>
-                          {item.product}
+                          {item.product.toUpperCase()}
                         </MenuListItem>
                         <MenuListItem>
                           {toCurrency(item.price)}

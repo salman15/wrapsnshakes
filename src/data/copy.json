@@ -27,7 +27,7 @@
       "bgImage": "https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_8036.jpg"
     },
     "menu": {
-      "subTitle": "Our Menu",
+      "subTitle": "Onze Menu",
       "bgImage": "https://i.pinimg.com/originals/b1/d0/1a/b1d01a377009e0d59fce582b99b60b32.jpg",
       "menuItems": [
         {
@@ -116,7 +116,7 @@
               "product": "LOADED DELUXE FRIES",
               "description": "fresh cut potato fries with minced beef, fried egg, turkey bacon, red onion & cheese",
 
-              "price": "5.95"
+              "price": "6.95"
             },
             {
               "product": "LOADED FETA FRIES (v)",
@@ -128,7 +128,7 @@
               "product": "LOADED CHEESY FRIES",
               "description": "fresh cut potato fries with cheese sauce",
 
-              "price": "5.95"
+              "price": "4.00"
             },
             {
               "product": "FRIES",
@@ -176,37 +176,37 @@
               "product": "oreo",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             },
             {
               "product": "kitkat",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             },
             {
               "product": "kinder bueno",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             },
             {
               "product": "dutch cookie",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             },
             {
               "product": "caramel goldie",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             },
             {
               "product": "healthy fruit",
               "description": "",
 
-              "price": "3.50"
+              "price": "4.50"
             }
           ]
         },
@@ -326,7 +326,7 @@
       }
     },
     "aboutUs": {
-      "title": "Lebanese Cuisine",
+      "title": "Lebanese Keuken",
       "text": "De Libanese gastronomie is een rijke mix van verse ingrediënten zoals olijfolie, specerijen, groenten, zuivelproducten, granen en vlees. Onze chef is uitstekend in staat om een smeltkroes van Libanese, mediterraan geïnspireerde gerechten te combineren met de Europese smaakzin. Smaakvolle kruiden en specerijen combineren texturen om uw smaakpapillen te doen genieten."
     },
     "contact": {
@@ -334,20 +334,20 @@
       "email": {
         "title": "Email",
         "support": {
-          "title": "For Support:",
+          "title": "Voor hulp:",
           "email": "support@thewrapbar.nl"
         },
         "work": {
-          "title": "To join our team:",
+          "title": "Om bij ons team te komen:",
           "email": "work@thewrapbar.nl"
         },
         "info": {
-          "title": "For questions:",
+          "title": "Voor vragen:",
           "email": "info@thewrapbar.nl"
         }
       },
       "tel": {
-        "title": "Phone",
+        "title": "Telefoon",
         "text": "tel: ",
         "number": "0620438661"
       },
@@ -356,13 +356,13 @@
           "content": "Adres: Kruisweg 649"
         },
         {
-          "content": "postal: 1054JA"
+          "content": "Postcode: 1054JA"
         },
         {
-          "content": "City: Rotterdam"
+          "content": "Stad: Rotterdam"
         },
         {
-          "content": "Country: The Netherlands"
+          "content": "Land: The Netherlands"
         }
       ],
       "businessInfo": [

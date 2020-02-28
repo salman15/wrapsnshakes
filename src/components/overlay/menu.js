@@ -5,19 +5,19 @@ export const MenuOverlay = ({ openMenu, setOpenMenu }) => {
   return (
     <Overlay show={openMenu}>
       <MenuItem href="#aboutUs" onClick={() => setOpenMenu(false)}>
-        About us
+        Over ons
       </MenuItem>
       <MenuItem href="#ourFood" onClick={() => setOpenMenu(false)}>
-        Our Food
+        Onze Eten
       </MenuItem>
       <MenuItem href="#ourMenu" onClick={() => setOpenMenu(false)}>
-        Our Menu
+        Onze Menu
       </MenuItem>
       {/* <MenuItem href="#reviews" onClick={() => setOpenMenu(false)}>
         Reviews
       </MenuItem> */}
       <MenuItem href="#contact" onClick={() => setOpenMenu(false)}>
-        Contact us
+        Contact ons
       </MenuItem>
     </Overlay>
   );
